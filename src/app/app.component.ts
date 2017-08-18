@@ -8,3 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 }
+
+
+//use this approach; comes with a video: https://github.com/OasisDigital/sse-a2-example
