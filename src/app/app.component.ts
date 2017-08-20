@@ -10,4 +10,4 @@ export class AppComponent {
 }
 
 
-//use this approach; comes with a video: https://github.com/OasisDigital/sse-a2-example
+//use this approach; comes with a video: https://github.com/OasisDigital/sse-a2-example. Project is downloaded to Macbook as is example node server.
