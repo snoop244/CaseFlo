@@ -3,7 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
 ## TODO
-- embed ngrx for Elm-like pure functions and state mananagement: https://github.com/ngrx/platform
+- embed ngrx for Elm-like pure functions and state mananagement: https://github.com/ngrx/platform. Learn about it here: https://blog.nrwl.io/ngrx-patterns-and-techniques-f46126e2b1e5 
+and: https://gist.github.com/btroncone/a6e4347326749f938510 and, for Pro members: https://egghead.io/lessons/angular-2-ngrx-store-in-10-minutes.
 
 # Install and Configure
 ## Development server
