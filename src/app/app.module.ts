@@ -4,16 +4,26 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterializeModule } from "angular2-materialize";
-import { ActiveItemsComponent } from './active-items/active-items.component';
+import { MaterializeModule } from 'angular2-materialize';
+import { TabsComponent } from './tabs/tabs';
 import { APP_CONFIG, AppConfig } from './app.config';
 import { CRUDBpmnService } from './crud-bpmn.service'
-import { CRUDPlanItemService } from './crud-plan-item.service'
+import { CRUDPlanItemService } from './crud-plan-item.service';
+import { DiscussMessageListComponent } from './discuss-message-list/discuss-message-list.component';
+import { DiscussThreadListComponent } from './discuss-thread-list/discuss-thread-list.component';
+import { CaseUserListComponent } from './case-user-list/case-user-list.component';
+import { DiscussThreadSectionComponent } from './discuss-thread-section/discuss-thread-section.component';
+import { DiscussMessageSectionComponent } from './discuss-message-section/discuss-message-section.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ActiveItemsComponent
+    TabsComponent,
+    DiscussMessageListComponent,
+    DiscussThreadListComponent,
+    CaseUserListComponent,
+    DiscussThreadSectionComponent,
+    DiscussMessageSectionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ActiveItemsComponent } from './active-items.component';
+import { DiscussMessageListComponent } from './discuss-message-list.component';
 
-describe('ActiveItemsComponent', () => {
-  let component: ActiveItemsComponent;
-  let fixture: ComponentFixture<ActiveItemsComponent>;
+describe('DiscussMessageListComponent', () => {
+  let component: DiscussMessageListComponent;
+  let fixture: ComponentFixture<DiscussMessageListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ActiveItemsComponent ]
+      declarations: [ DiscussMessageListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ActiveItemsComponent);
+    fixture = TestBed.createComponent(DiscussMessageListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
