@@ -16,7 +16,6 @@ import { CaseParticipantListComponent } from './case-participant-list/case-parti
 import { DiscussThreadSectionComponent } from './discuss-thread-section/discuss-thread-section.component';
 import { DiscussMessageSectionComponent } from './discuss-message-section/discuss-message-section.component'
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +30,7 @@ import { DiscussMessageSectionComponent } from './discuss-message-section/discus
   imports: [
     BrowserModule,
     HttpClientModule,
-    HttpModule, // NOTE: I have both this old and the newer, above, module. Not having this caused weird problems for some selectors not showing??
+    //HttpModule, // NOTE: I have both this old and the newer, above, module. Not having this caused weird problems for some selectors not showing??
     BrowserAnimationsModule,
     MaterializeModule
   ],
