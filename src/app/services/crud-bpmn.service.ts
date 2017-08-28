@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { APP_CONFIG, IAppConfig } from './app.config';
+import { APP_CONFIG, IAppConfig } from '../app.config';
 
 @Injectable()
 export class CRUDBpmnService {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CRUDPlanItemService } from '../crud-plan-item.service'
+import { CRUDPlanItemService } from '../services/crud-plan-item.service';
 
 @Component({
   selector: 'tabs',

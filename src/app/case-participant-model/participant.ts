@@ -2,5 +2,5 @@ export interface Participant {
   id: number;
   firstName: string;
   lastName: string;
-  currentRole: string; // what their role is with respect to the thread
+  discussionRole: string; // what role are they playing in the discussion FIXME participant should be generic, not discussion specific.
 }
