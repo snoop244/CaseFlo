@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import { HttpModule} from "@angular/http";
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterializeModule } from 'angular2-materialize';
@@ -31,6 +31,7 @@ import { DiscussMessageSectionComponent } from './discuss-message-section/discus
   imports: [
     BrowserModule,
     HttpClientModule,
+    HttpModule, // NOTE: I have both this old and the newer, above, module. Not having this caused weird problems for some selectors not showing??
     BrowserAnimationsModule,
     MaterializeModule
   ],
