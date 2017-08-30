@@ -14,7 +14,10 @@ export class DiscussThreadSectionComponent implements OnInit {
 
   ngOnInit() {
 
-    this.discussThreadService.getParticipantThreads();
+    this.discussThreadService.getParticipantThreads()
+      .subscribe(
+        console.log
+      );
     // TODO stopped here: https://angular-university.io/lesson/angular-ngrx-store-concepts-introduction
   }
 

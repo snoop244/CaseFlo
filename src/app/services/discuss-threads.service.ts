@@ -1,9 +1,8 @@
 import {Inject, Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-//import {Http} from "@angular/http";
-import {APP_CONFIG, IAppConfig} from "../app.config";
-import {Observable} from "rxjs/Observable";
-import {AllParticipantDiscussData} from "../discuss-model/discuss-dto";
+import {HttpClient} from '@angular/common/http';
+import {APP_CONFIG, IAppConfig} from '../app.config';
+import {Observable} from 'rxjs/Observable';
+import {AllParticipantDiscussData} from '../discuss-model/discuss-dto';
 import * as _ from 'lodash';
 import 'rxjs/Rx'; // FIXME import specific operators here, not all 50+
 
