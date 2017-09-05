@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Store} from '@ngrx/store';
+import {ApplicationState} from '../store/application-state';
 
 @Component({
   selector: 'discuss-message-section',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiscussMessageSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: Store<ApplicationState>) {
+
+    store.subscribe(
+      state => console.log('message section received state', state)
+    );
+  }
 
   ngOnInit() {
   }
