@@ -19,6 +19,7 @@ export class DiscussThreadsService {
       .get(uri)
       .map(res => res.json());
   }
-  // TODO stopped here: https://angular-university.io/lesson/angular-ngrx-store-concepts-introduction
+  // TODO 1: research and move reducers to a reducer map
+  // TODO 2: create a single API call on the backend to grab AllParticipantDiscuss data
 
 }

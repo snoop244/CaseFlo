@@ -5,7 +5,7 @@ import {Participant} from '../case-participant-model/participant';
 import {Thread} from './thread';
 import {Message} from './message';
 
-export interface AllParticipantDiscussData {
+export interface AllParticipantDiscussData { // TODO: create a single API call on the backend to grab this data
 
   participants: Participant[];
   threads: Thread[];

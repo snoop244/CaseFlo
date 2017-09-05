@@ -6,9 +6,7 @@ import {Store} from '@ngrx/store';
 import {ApplicationState} from '../store/application-state';
 import {LoadParticipantThreadsAction} from "../store/actions";
 
-/**
- * Container components know about backend services and the store
- */
+
 @Component({
   selector: 'discuss-thread-section',
   templateUrl: './discuss-thread-section.component.html',
@@ -26,12 +24,13 @@ export class DiscussThreadSectionComponent implements OnInit {
 
   ngOnInit() {
 
-    this.discussThreadService.getParticipantThreads()
+    this.discussThreadService.getParticipantThreads() // 1. Calls the backend for all the data.
       .subscribe(
-        allParticipantDiscussData => this.store.dispatch( // can only use actions to change store
-                new LoadParticipantThreadsAction(allParticipantDiscussData)
-        )
-      );
+        allParticipantDiscussData => this.store.dispatch( // 2. Dispatches action to update store
+                new LoadParticipantThreadsAction(allParticipantDiscussData) // 3. This action is of type LOAD_PARTICIPANT_THREADS_ACTION
+        ) // see: src/app/store/actions.ts:8 for that type definition.
+      ); // 4. This, in turn, triggers the storeReducer handleLoadParticipantThreadsAction(), with the above-noted action.type
+    // 5. The reducer informs all components that have a store.subscribe of the change.
   }
 
 }
