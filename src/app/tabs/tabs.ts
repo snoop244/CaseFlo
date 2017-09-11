@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CRUDPlanItemService } from '../services/crud-plan-item.service';
+import {DiscussSmsService} from "../services/discuss-sms.service";
 
 @Component({
   selector: 'tabs',
@@ -8,7 +9,7 @@ import { CRUDPlanItemService } from '../services/crud-plan-item.service';
 })
 export class TabsComponent implements OnInit {
 
-  constructor(private crudPlanItemService: CRUDPlanItemService) { }
+  constructor(private crudPlanItemService: CRUDPlanItemService, private discussSMSService: DiscussSmsService) { }
 
   resultString: string = '';
 
@@ -21,5 +22,10 @@ export class TabsComponent implements OnInit {
     const taskId: string = event.currentTarget.attributes.id.value; // temporary for test
     console.log(taskId);
     this.crudPlanItemService.manuallyCompleteHumanTask(taskId); // returns a subscription TODO output to a toast??
+  }
+
+  sendSMS(event) {
+    this.discussSMSService.sendSMS();
+
   }
 }
