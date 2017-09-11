@@ -21,6 +21,8 @@
 </div>
 <div id="discuss" class="col s12">
 
+  <span><a class="waves-effect waves-light btn"  (click)= "sendSMS($event)"><i class="material-icons left" >cloud</i>send SMS</a></span>
+  <p>{{ resultString }}</p>
   <case-participant-list> </case-participant-list>
   <discuss-thread-section></discuss-thread-section>
   <discuss-message-section></discuss-message-section>
