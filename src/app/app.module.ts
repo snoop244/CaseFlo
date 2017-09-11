@@ -13,6 +13,7 @@ import { APP_CONFIG, AppConfig } from './app.config';
 import { CRUDBpmnService } from './services/crud-bpmn.service';
 import { CRUDPlanItemService } from './services/crud-plan-item.service';
 import {DiscussThreadsService} from './services/discuss-threads.service';
+import { DiscussSmsService} from "./services/discuss-sms.service";
 import { DiscussMessageListComponent } from './discuss-message-list/discuss-message-list.component';
 import { DiscussThreadListComponent } from './discuss-thread-list/discuss-thread-list.component';
 import { CaseParticipantListComponent } from './case-participant-list/case-participant-list.component';
@@ -46,7 +47,7 @@ import {reducers} from "./reducers/index";
     MaterializeModule,
     StoreModule.forRoot(reducers, {initialState: INITIAL_APPLICATION_STATE})
   ],
-  providers: [{ provide: APP_CONFIG, useValue: AppConfig }, CRUDBpmnService, CRUDPlanItemService, DiscussThreadsService],
+  providers: [{ provide: APP_CONFIG, useValue: AppConfig }, CRUDBpmnService, CRUDPlanItemService, DiscussSmsService, DiscussThreadsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
